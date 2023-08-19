@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'course/css/style.css' %}" />
+        <title> {{title}} </title>
+    </head>
+
+    <body>
+        <h2>Static Learning {{cname}} </h2>
+        <img src="{% static 'course/images/beach1.avif' %}" alt="Django" />
+        <br>
+        <img src="{% get_static_prefix %}course/images/beach2.avif" alt="Django" />
+        <hr />
+        <form action="">
+            <input type="button" value="Click Me" onclick="disp()" />
+        </form>
+        <script src="{% static 'course/js/all.js' %}" ></script>
+    </body>
